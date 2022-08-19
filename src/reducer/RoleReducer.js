@@ -9,7 +9,7 @@ const ROLE_STATE = {
 };
 
 export const useRoleStore = defineStore({
-  id: "post",
+  id: "post1",
   state: () => ROLE_STATE,
   actions: {
     getRequest() {

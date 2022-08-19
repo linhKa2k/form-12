@@ -2,17 +2,14 @@
     <a-layout-header style="background: #fff; margin: 0 16px" class="abc">
 
         <div class="form-add">
-            <a-input style="width: 200px" placeholder="add" v-model="search" enterButton @on-search="searchData" />
-            <a-button type="primary" @click="addData">
+            <a-input style="width: 200px" placeholder="add" v-model:value="name_Role" enterButton />
+            <a-button type="primary" @click="addData(name_Role)">
                 <a-icon type="plus" />
                 Add
             </a-button>
 
         </div>
-
-
         <div class="form-update">
-            <a-input style="width: 200px" placeholder="update" v-model="search" enterButton @on-search="searchData" />
             <a-button type="primary" @click="updateData">
                 <a-icon type="edit" />
                 Update
